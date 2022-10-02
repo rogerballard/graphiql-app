@@ -60,11 +60,17 @@ export default class MenuBuilder {
           label: 'About GraphiQL',
           selector: 'orderFrontStandardAboutPanel:',
         },
+        {
+          label: 'GitHub',
+          click() {
+            shell.openExternal('https://github.com/rogerballard/graphiql-app');
+          },
+        },
         { type: 'separator' },
         { label: 'Services', submenu: [] },
         { type: 'separator' },
         {
-          label: 'Hide ElectronReact',
+          label: 'Hide GraphiQL',
           accelerator: 'Command+H',
           selector: 'hide:',
         },
@@ -155,23 +161,11 @@ export default class MenuBuilder {
       label: 'Help',
       submenu: [
         {
-          label: 'Learn More',
-          click() {
-            shell.openExternal('https://electronjs.org');
-          },
-        },
-        {
           label: 'Documentation',
           click() {
             shell.openExternal(
-              'https://github.com/electron/electron/tree/main/docs#readme'
+              'https://github.com/rogerballard/graphiql-app#readme'
             );
-          },
-        },
-        {
-          label: 'Community Discussions',
-          click() {
-            shell.openExternal('https://www.electronjs.org/community');
           },
         },
         {
@@ -256,23 +250,11 @@ export default class MenuBuilder {
         label: 'Help',
         submenu: [
           {
-            label: 'Learn More',
-            click() {
-              shell.openExternal('https://electronjs.org');
-            },
-          },
-          {
             label: 'Documentation',
             click() {
               shell.openExternal(
-                'https://github.com/electron/electron/tree/main/docs#readme'
+                'https://github.com/rogerballard/graphiql-app#readme'
               );
-            },
-          },
-          {
-            label: 'Community Discussions',
-            click() {
-              shell.openExternal('https://www.electronjs.org/community');
             },
           },
           {
