@@ -1,6 +1,6 @@
 import GraphiQL from 'graphiql'
-import 'graphiql/graphiql.min.css';
-import './App.css';
+import 'graphiql/graphiql.min.css'
+import './App.css'
 
 export default function App() {
   return (
@@ -16,10 +16,10 @@ export default function App() {
             },
             body: JSON.stringify(graphQLParams),
             credentials: 'same-origin',
-          },
-        );
-        return data.json().catch(() => data.text());
+          }
+        )
+        return data.json().catch(() => data.text())
       }}
     />
-  );
+  )
 }
