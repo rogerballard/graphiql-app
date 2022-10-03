@@ -1,15 +1,8 @@
 {
   "description": "GraphiQL App",
   "keywords": [
-    "electron",
-    "boilerplate",
-    "react",
-    "typescript",
-    "ts",
-    "sass",
-    "webpack",
-    "hot",
-    "reload"
+    "graphiql",
+    "electron"
   ],
   "homepage": "https://github.com/rogerballard/graphiql-app#readme",
   "bugs": {
